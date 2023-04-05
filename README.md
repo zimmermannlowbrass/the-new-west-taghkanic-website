@@ -1,23 +1,19 @@
 Here is the rough sketch for my react App --- 
 
-I want to create a game of Texas Hold Em
+Breakfast Diner Menu
 
 
 
+Get - grab the initial API
+Patch - change a part of the menu item (ingrediant)
+Post - Add a new item
+Delete - Get rid of a menu item
 
 
+next to do: 
 
-
-
-
-
-
-
-
-
-
-
-
+add images to the db.json
+fill out the card info of each item
 
 
 

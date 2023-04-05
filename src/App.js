@@ -1,14 +1,20 @@
-import React, { useEffect } from 'react';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import ItemList from './Components/ItemList';
 
 function App() {
 
-  useEffect( () => {fetch(`http://localhost:3000/cards`)
+  const [items, setItems] = useState([])
+
+  useEffect( () => {fetch(`http://localhost:3000/breakfast`)
   .then(r => r.json())
-  .then(data => console.log(data))} , []
+  .then(items => setItems(items))} , []
   )
+
+
   return (
-    <div>this is a test</div>
+    <div>
+      <ItemList items = {items} />
+    </div>
   );
 }
 
