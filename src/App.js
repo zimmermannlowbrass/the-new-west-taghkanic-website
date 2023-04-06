@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from './Components/ItemList';
+import NavBar from './Components/NavBar';
+import About from './Components/About';
+import { Route, Switch } from 'react-router-dom';
+
 
 function App() {
 
@@ -13,7 +17,15 @@ function App() {
 
   return (
     <div>
-      <ItemList items = {items} />
+      <NavBar />
+      <Switch>
+        <Route exact path='/'>
+          <ItemList items = {items} />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+      </Switch>
     </div>
   );
 }
