@@ -6,7 +6,6 @@ import NavBar from './Components/NavBar';
 import About from './Components/About';
 import MealItemList from './Components/MealItemList';
 import DrinkItemList from './Components/DrinkItemList';
-import Feedback from './Components/Feedback';
 
 
 function App() {
@@ -35,9 +34,6 @@ function App() {
         </Route>
         <Route path='/drinks'>
           <DrinkItemList items = {drinkItems} />
-        </Route>
-        <Route path='/feedback'>
-          <Feedback items = {items} />
         </Route>
       </Switch>
     </div>

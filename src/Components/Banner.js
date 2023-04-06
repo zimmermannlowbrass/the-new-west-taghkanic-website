@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
     return (
         <div>
-            <header>Welcome to the Taghkanic Diner!</header>
+            <header>Welcome to the West Taghkanic Diner!</header>
             <img id='diner' src={require ('../diner.jpeg')} alt='diner' />
         </div>
     )

@@ -1,5 +1,6 @@
 import React from "react";
 import Item from "./Item";
+import Feedback from "./Feedback";
 
 function MealItemList( {items} ) {
 
@@ -17,6 +18,7 @@ function MealItemList( {items} ) {
         <div>
             <h1>Meals</h1>
             {mealItemCards}
+            <Feedback type = {'meal'}/>
         </div>
         
     )
