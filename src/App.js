@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import ItemList from './Components/ItemList';
+import { Route, Switch } from 'react-router-dom';
+
 import NavBar from './Components/NavBar';
 import About from './Components/About';
-import { Route, Switch } from 'react-router-dom';
+import MealItemList from './Components/MealItemList';
+import DrinkItemList from './Components/DrinkItemList';
+import Feedback from './Components/Feedback';
 
 
 function App() {
 
   const [items, setItems] = useState([])
+
+  const mealItems = items.filter(item => item.type === 'meal')
+  const drinkItems = items.filter(item => item.type === 'drink')
 
   useEffect( () => {fetch(`http://localhost:3000/breakfast`)
   .then(r => r.json())
@@ -17,13 +23,22 @@ function App() {
 
   return (
     <div>
+      <div>
+        <img className='dinerPhoto' src={require ('./diner.jpeg')}alt='diner' />
+      </div>
       <NavBar />
       <Switch>
         <Route exact path='/'>
-          <ItemList items = {items} />
-        </Route>
-        <Route path='/about'>
           <About />
+        </Route>
+        <Route path='/meals'>
+          <MealItemList items = {mealItems} />
+        </Route>
+        <Route path='/drinks'>
+          <DrinkItemList items = {drinkItems} />
+        </Route>
+        <Route path='/feedback'>
+          <Feedback items = {items} />
         </Route>
       </Switch>
     </div>
