@@ -82,7 +82,7 @@
     },
     {
     "id" : "13",
-    "name": "Cappuccino",
+    "name": "Cappuccino (with chocolate)",
     "type": "drink",
     "price": "3.99",
     "ingredients" : ["espresso", "milk", "chocolate"],

@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       <div>
-        <img className='dinerPhoto' src={require ('./diner.jpeg')}alt='diner' />
+        <img id='diner' src={require ('./diner.jpeg')} alt='diner' />
       </div>
       <NavBar />
       <Switch>

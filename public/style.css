@@ -1,0 +1,9 @@
+#diner {
+    border: solid black 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;    
+    height: 400px;
+  }
+  
