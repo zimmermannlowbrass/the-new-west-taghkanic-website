@@ -7,3 +7,9 @@
     height: 400px;
   }
   
+header {
+    font-family:cursive;
+    font-size: 40pt;
+    display: flex;
+    justify-content: center;
+}

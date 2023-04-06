@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import Banner from './Components/Banner';
 import NavBar from './Components/NavBar';
 import About from './Components/About';
 import MealItemList from './Components/MealItemList';
@@ -23,9 +24,7 @@ function App() {
 
   return (
     <div>
-      <div>
-        <img id='diner' src={require ('./diner.jpeg')} alt='diner' />
-      </div>
+      <Banner />
       <NavBar />
       <Switch>
         <Route exact path='/'>
