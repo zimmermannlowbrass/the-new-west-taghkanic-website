@@ -12,15 +12,31 @@ function App() {
 
   const [items, setItems] = useState([])
 
-  const mealItems = items.filter(item => item.type === 'meal')
-  const drinkItems = items.filter(item => item.type === 'drink')
-
   useEffect( () => {fetch(`http://localhost:3000/breakfast`)
   .then(r => r.json())
-  .then(items => setItems(items))} , []
-  )
+  .then(setItems)
+  },[])
 
+  function handleAddItem(newItem) {
+    console.log(newItem)
+    fetch(`http://localhost:3000/breakfast`, {
+      method : "POST",
+      headers : {
+        "Content-Type" : "application/json"
+      },
+      body : JSON.stringify(newItem)
+    })
+    .then(r => r.json())
+    .then((newItem) => {
+      const newItems = [...items, newItem]
+      setItems(newItems)
+    })
+  }
+  console.log('rerender!')
 
+  const mealItems = items.filter(item => item.type === 'meal')
+  const drinkItems = items.filter(item => item.type === 'drink')
+ 
   return (
     <div>
       <Banner />
@@ -30,10 +46,16 @@ function App() {
           <About />
         </Route>
         <Route path='/meals'>
-          <MealItemList items = {mealItems} />
+          <MealItemList 
+          items = {mealItems}
+          onAddItem = {handleAddItem}
+           />
         </Route>
         <Route path='/drinks'>
-          <DrinkItemList items = {drinkItems} />
+          <DrinkItemList 
+          items = {drinkItems} 
+          onAddItem = {handleAddItem}
+          />
         </Route>
       </Switch>
     </div>

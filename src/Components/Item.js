@@ -12,7 +12,7 @@ function Item( { item }) {
         <ul className="card">
             <h3>{item.name}</h3>
             <p>Price: {item.price}</p>
-            <h5>Ingredients: {ingredientsList}</h5>
+            <h5>Ingredients: {item.ingredients.length > 0 ? ingredientsList : null}</h5>
             <br></br>
             <img src={item.image} alt={item.name} />
         </ul>

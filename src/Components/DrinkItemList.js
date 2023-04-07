@@ -2,7 +2,7 @@ import React from "react";
 import Item from "./Item";
 import Feedback from "./Feedback";
 
-function DrinkItemList( {items} ) {
+function DrinkItemList( { items, onAddItem } ) {
 
     function createCard(item) {
         return (
@@ -19,7 +19,10 @@ function DrinkItemList( {items} ) {
         <div>
             <h1>Drinks</h1>
             {drinkItemCards}
-            <Feedback type='drink'/>
+            <Feedback 
+            type='drink'
+            onAddItem = {onAddItem}
+            />
         </div>
     )
 }
