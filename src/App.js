@@ -18,7 +18,6 @@ function App() {
   },[])
 
   function handleAddItem(newItem) {
-    console.log(newItem)
     fetch(`http://localhost:3000/breakfast`, {
       method : "POST",
       headers : {
@@ -32,6 +31,18 @@ function App() {
       setItems(newItems)
     })
   }
+
+  function handleDeleteItem(deletedItem) {
+    fetch(`http://localhost:3000/breakfast/${deletedItem.id}`, {
+      method : "DELETE"
+    })
+    .then(r => r.json())
+    .then(() => {
+      const newItems = items.filter(item => item.id !== deletedItem.id)
+      setItems(newItems)
+    })
+  }
+
   console.log('rerender!')
 
   const mealItems = items.filter(item => item.type === 'meal')
@@ -49,12 +60,14 @@ function App() {
           <MealItemList 
           items = {mealItems}
           onAddItem = {handleAddItem}
+          onDeleteItem = {handleDeleteItem}
            />
         </Route>
         <Route path='/drinks'>
           <DrinkItemList 
           items = {drinkItems} 
           onAddItem = {handleAddItem}
+          onDeleteItem = {handleDeleteItem}
           />
         </Route>
       </Switch>

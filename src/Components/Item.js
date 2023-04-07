@@ -1,21 +1,21 @@
 import React from "react";
+import Stars from "./StarBar";
 
-function Item( { item }) {
+function Item( { item, onDeleteItem }) {
 
-    // const ingredientsList = item.ingredients.map(ingredient => {
-    //     return (
-    //         <ul key={item.ingredients.indexOf(ingredient)}>{ingredient}</ul>
-    //     )
-    // })
+    function handleDeleteClick() {
+        onDeleteItem(item)
+    }
 
     return (
         <ul className="card">
             <h3>{item.name}</h3>
+            <img src={item.image} alt={item.name} />
             <p>Price: {item.price}</p>
             <p>Description: {item.description}</p>
-            {/* <h5>Ingredients: {item.ingredients.length > 0 ? ingredientsList : null}</h5> */}
+            <Stars />
+            <button onClick={handleDeleteClick}>Delete this menu item</button>
             <br></br>
-            <img src={item.image} alt={item.name} />
         </ul>
     )
 }

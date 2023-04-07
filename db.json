@@ -95,6 +95,15 @@
       "price": "3.99",
       "description": "espresso, milk",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg"
+    },
+    {
+      "name": "",
+      "type": "meal",
+      "price": "",
+      "ingredients": [],
+      "description": "",
+      "image": "",
+      "id": "rpoRIQC"
     }
   ]
 }
