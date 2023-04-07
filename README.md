@@ -4,8 +4,13 @@ Breakfast Diner Menu
 
 
 
-Get - grab the initial API
+Get - grab the initial API 
+check
+
 Patch - change a part of the menu item (ingrediant)
+check
+
+
 Post - Add a new item
 Delete - Get rid of a menu item
 

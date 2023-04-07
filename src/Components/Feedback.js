@@ -7,6 +7,7 @@ function Feedback( { type, onAddItem} ) {
         type: type,
         price: '',
         ingredients: [],
+        description: '',
         image: ''
     })
 
@@ -39,13 +40,6 @@ function Feedback( { type, onAddItem} ) {
                 <br />
                 <input
                     type='text'
-                    name='ingrediants'
-                    placeholder="Ingrediants..."
-                    onChange={handleChange}
-                />
-                <br />
-                <input
-                    type='text'
                     name='price'
                     placeholder="Price..."
                     onChange={handleChange}
@@ -58,6 +52,14 @@ function Feedback( { type, onAddItem} ) {
                     onChange={handleChange}
                 />
                 <br />
+                <ul>
+                    <input
+                    type='text'
+                    name='description'
+                    placeholder="Description..."
+                    onChange={handleChange}
+                    />
+                </ul>
                 <button>Submit</button>    
             </form>
         </div>
