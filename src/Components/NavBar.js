@@ -5,7 +5,7 @@ function NavBar() {
 
     const linkStyles = {
         display: "inline-block",
-        width: "100px",
+        width: "200px",
         padding: "12px",
         margin: "0 6px 6px",
         background: "black",
@@ -16,9 +16,9 @@ function NavBar() {
 
     return (
         <div>
-            <NavLink to="/" exact style={linkStyles} activeStyle={{background: "darkblue",}} >Home</NavLink>
-            <NavLink to="/meals" exact style={linkStyles} activeStyle={{background: "darkblue",}} >Meals</NavLink>
-            <NavLink to="/drinks" exact style={linkStyles} activeStyle={{background: "darkblue",}} >Drinks</NavLink>
+            <NavLink to="/" exact style={linkStyles} activeStyle={{background: "rgb(70, 42, 7)",}} >Home</NavLink>
+            <NavLink to="/meals" exact style={linkStyles} activeStyle={{background: "rgb(70, 42, 7)",}} >Meals</NavLink>
+            <NavLink to="/drinks" exact style={linkStyles} activeStyle={{background: "rgb(70, 42, 7)",}} >Drinks</NavLink>
         </div>
     )
 }

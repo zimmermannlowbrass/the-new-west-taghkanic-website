@@ -17,8 +17,6 @@ function Stars( { stars, itemID } ) {
                 stars : e.target.value
             })
         })
-        .then(r => r.json())
-        .then(item => console.log(item))
     }
 
     return (
