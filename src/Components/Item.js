@@ -13,7 +13,9 @@ function Item( { item, onDeleteItem }) {
             <img src={item.image} alt={item.name} />
             <p>Price: {item.price}</p>
             <p>Description: {item.description}</p>
-            <Stars />
+            <Stars 
+            stars={item.stars}
+            itemID = {item.id}/>
             <button onClick={handleDeleteClick}>Delete this menu item</button>
             <br></br>
         </ul>

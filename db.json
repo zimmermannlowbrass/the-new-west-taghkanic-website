@@ -6,7 +6,8 @@
       "type": "meal",
       "price": "14.99",
       "description": "eggs, bacon, sausage, ham, hasbrowns, toast",
-      "image": "https://cdn.cheapism.com/images/LumberjackSlam_qj1GbPm.max-784x410.jpg"
+      "image": "https://cdn.cheapism.com/images/LumberjackSlam_qj1GbPm.max-784x410.jpg",
+      "stars": "1"
     },
     {
       "id": "2",
@@ -14,7 +15,8 @@
       "type": "meal",
       "price": "18.99",
       "description": "eggs, ham, cheese, english muffin, hashbrowns",
-      "image": "https://cdn.cheapism.com/images/Classic_Benny_Breakfast.max-784x410.jpg"
+      "image": "https://cdn.cheapism.com/images/Classic_Benny_Breakfast.max-784x410.jpg",
+      "stars": "1"
     },
     {
       "id": "3",
@@ -22,7 +24,8 @@
       "type": "meal",
       "price": "10.99",
       "description": "eggs, steak, hasbrowns, toast",
-      "image": "https://cdn.cheapism.com/images/T-Bone_Steak__Eggs.max-784x410.jpg"
+      "image": "https://cdn.cheapism.com/images/T-Bone_Steak__Eggs.max-784x410.jpg",
+      "stars": "4"
     },
     {
       "id": "4",
@@ -30,7 +33,8 @@
       "type": "meal",
       "price": "10.99",
       "description": "eggs, ham, cheese, hasbrowns, toast",
-      "image": "https://cdn.cheapism.com/images/DODe_16550_Oct22_FINAL_51255_Moons_over_My_H.max-784x410.jpg"
+      "image": "https://cdn.cheapism.com/images/DODe_16550_Oct22_FINAL_51255_Moons_over_My_H.max-784x410.jpg",
+      "stars": 0
     },
     {
       "id": "5",
@@ -38,7 +42,8 @@
       "type": "meal",
       "price": "10.99",
       "description": "eggs, ham, peppers, hasbrowns, toast",
-      "image": "https://cdn.cheapism.com/images/UltimateOmelette.max-784x410.jpg"
+      "image": "https://cdn.cheapism.com/images/UltimateOmelette.max-784x410.jpg",
+      "stars": 0
     },
     {
       "id": "6",
@@ -46,7 +51,8 @@
       "type": "meal",
       "price": "10.99",
       "description": "eggs, sausage, hasbrowns, chocolate banana pancakses",
-      "image": "https://cdn.cheapism.com/images/Choconana_Pancake_Breakfast_Feb22_Core.CC_Ma.max-784x410.jpg"
+      "image": "https://cdn.cheapism.com/images/Choconana_Pancake_Breakfast_Feb22_Core.CC_Ma.max-784x410.jpg",
+      "stars": 0
     },
     {
       "id": "7",
@@ -54,7 +60,8 @@
       "type": "drink",
       "price": "1.99",
       "description": "espresso",
-      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_espresso.jpg"
+      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_espresso.jpg",
+      "stars": "5"
     },
     {
       "id": "10",
@@ -62,7 +69,8 @@
       "type": "drink",
       "price": "2.99",
       "description": "espresso, coffee",
-      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_red-eye.jpg"
+      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_red-eye.jpg",
+      "stars": 0
     },
     {
       "id": "11",
@@ -70,7 +78,8 @@
       "type": "drink",
       "price": "3.99",
       "description": "espresso, water",
-      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_americano.jpg"
+      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_americano.jpg",
+      "stars": 0
     },
     {
       "id": "12",
@@ -78,7 +87,8 @@
       "type": "drink",
       "price": "3.99",
       "description": "espresso, milk",
-      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_macchiato.jpg"
+      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_macchiato.jpg",
+      "stars": 0
     },
     {
       "id": "13",
@@ -86,7 +96,8 @@
       "type": "drink",
       "price": "3.99",
       "description": "espresso, milk, added chocolate",
-      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_cappuccino.jpg"
+      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_cappuccino.jpg",
+      "stars": 0
     },
     {
       "id": "14",
@@ -94,16 +105,26 @@
       "type": "drink",
       "price": "3.99",
       "description": "espresso, milk",
-      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg"
+      "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg",
+      "stars": 0
     },
     {
       "name": "",
       "type": "meal",
       "price": "",
-      "ingredients": [],
       "description": "",
       "image": "",
-      "id": "rpoRIQC"
+      "stars": 0,
+      "id": "N9h6m5n"
+    },
+    {
+      "name": "",
+      "type": "meal",
+      "price": "",
+      "description": "",
+      "image": "",
+      "stars": 0,
+      "id": "veL4_l7"
     }
   ]
 }

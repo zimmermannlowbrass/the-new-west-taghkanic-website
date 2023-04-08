@@ -1,17 +1,25 @@
 import React, { useState } from "react";
 
-function Stars() {
+function Stars( { stars, itemID } ) {
     const star = '☆'
     const likedStar = '★'
-    
 
-
-    const [starCount, setStarCount] = useState(0)
+    const [starCount, setStarCount] = useState(stars)
 
     function handleStarClick(e) {
         setStarCount(e.target.value)
+        fetch(`http://localhost:3000/breakfast/${itemID}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({
+                stars : e.target.value
+            })
+        })
+        .then(r => r.json())
+        .then(item => console.log(item))
     }
-
 
     return (
         <h4 className="starSection" onClick={handleStarClick}>
