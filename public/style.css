@@ -18,6 +18,11 @@ header {
     justify-content: center;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
 .mealCard {
     width: 800px;
     margin-left: 100px;
@@ -47,6 +52,8 @@ h1 {
 }
 
 .dinerPhotos {
-    width: 60%;
-    height: 60%;
+    width: 350pt;
+    height: 200pt;
+    display: inline-block;
 }
+

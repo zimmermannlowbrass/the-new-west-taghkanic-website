@@ -15,7 +15,7 @@ function NavBar() {
 
 
     return (
-        <div>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
             <NavLink to="/" exact style={linkStyles} activeStyle={{background: "rgb(70, 42, 7)",}} >Home</NavLink>
             <NavLink to="/meals" exact style={linkStyles} activeStyle={{background: "rgb(70, 42, 7)",}} >Meals</NavLink>
             <NavLink to="/drinks" exact style={linkStyles} activeStyle={{background: "rgb(70, 42, 7)",}} >Drinks</NavLink>

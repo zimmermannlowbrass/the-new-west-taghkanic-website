@@ -25,7 +25,7 @@
       "price": "10.99",
       "description": "eggs, steak, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/T-Bone_Steak__Eggs.max-784x410.jpg",
-      "stars": "4"
+      "stars": "0"
     },
     {
       "id": "4",
@@ -107,15 +107,6 @@
       "description": "espresso, milk",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg",
       "stars": 0
-    },
-    {
-      "name": "",
-      "type": "meal",
-      "price": "",
-      "description": "",
-      "image": "",
-      "stars": 0,
-      "id": "4lUnbBf"
     }
   ]
 }
