@@ -45,3 +45,8 @@ h1 {
     font-family: cursive;
     font-size: 20pt;
 }
+
+.dinerPhotos {
+    width: 60%;
+    height: 60%;
+}

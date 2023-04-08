@@ -3,9 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 
 import Banner from './Components/Banner';
 import NavBar from './Components/NavBar';
-import About from './Components/About';
+import Home from './Components/Home';
 import MealItemList from './Components/MealItemList';
 import DrinkItemList from './Components/DrinkItemList';
+import About from './Components/About';
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path='/'>
-          <About />
+          <Home />
         </Route>
         <Route path='/meals'>
           <MealItemList 
@@ -68,6 +69,9 @@ function App() {
           onAddItem = {handleAddItem}
           onDeleteItem = {handleDeleteItem}
           />
+        </Route>
+        <Route path='/about'>
+          <About />
         </Route>
       </Switch>
     </div>

@@ -34,7 +34,7 @@
       "price": "10.99",
       "description": "eggs, ham, cheese, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/DODe_16550_Oct22_FINAL_51255_Moons_over_My_H.max-784x410.jpg",
-      "stars": 0
+      "stars": "0"
     },
     {
       "id": "5",
@@ -107,6 +107,15 @@
       "description": "espresso, milk",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg",
       "stars": 0
+    },
+    {
+      "name": "",
+      "type": "meal",
+      "price": "",
+      "description": "",
+      "image": "",
+      "stars": 0,
+      "id": "4lUnbBf"
     }
   ]
 }

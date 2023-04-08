@@ -18,10 +18,8 @@ Delete - Get rid of a menu item
 
 next to do: 
 
-add images to the db.json
-fill out the card info of each item
-
-
+make it so that the main website is accessable from clicking the photo at top
+have the main website not be the about? Maybe create a HOME and a ABOUT section
 
 
 
