@@ -6,11 +6,14 @@ function MealItemList( { items, onAddItem, onDeleteItem } ) {
 
     function createCard(item) {
         return (
-            <Item 
-            item = {item}
-            key = {item.id}
-            onDeleteItem = {onDeleteItem}
-            />
+            <div key = {item.id} className = 'mealCard'>
+                <Item 
+                item = {item}
+                onDeleteItem = {onDeleteItem}
+                />
+                <br />
+            </div>
+
         )
     }
     const mealItemCards = items.map(item => createCard(item))

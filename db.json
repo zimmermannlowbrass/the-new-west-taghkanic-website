@@ -7,7 +7,7 @@
       "price": "14.99",
       "description": "eggs, bacon, sausage, ham, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/LumberjackSlam_qj1GbPm.max-784x410.jpg",
-      "stars": "1"
+      "stars": "0"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "price": "18.99",
       "description": "eggs, ham, cheese, english muffin, hashbrowns",
       "image": "https://cdn.cheapism.com/images/Classic_Benny_Breakfast.max-784x410.jpg",
-      "stars": "1"
+      "stars": "0"
     },
     {
       "id": "3",
@@ -107,24 +107,6 @@
       "description": "espresso, milk",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg",
       "stars": 0
-    },
-    {
-      "name": "",
-      "type": "meal",
-      "price": "",
-      "description": "",
-      "image": "",
-      "stars": 0,
-      "id": "N9h6m5n"
-    },
-    {
-      "name": "",
-      "type": "meal",
-      "price": "",
-      "description": "",
-      "image": "",
-      "stars": 0,
-      "id": "veL4_l7"
     }
   ]
 }

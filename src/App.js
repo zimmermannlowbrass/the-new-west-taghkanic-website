@@ -43,7 +43,6 @@ function App() {
     })
   }
 
-  console.log('rerender!')
 
   const mealItems = items.filter(item => item.type === 'meal')
   const drinkItems = items.filter(item => item.type === 'drink')

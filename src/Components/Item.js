@@ -8,9 +8,9 @@ function Item( { item, onDeleteItem }) {
     }
 
     return (
-        <ul className="card">
+        <div>
             <h3>{item.name}</h3>
-            <img src={item.image} alt={item.name} />
+            <img className = 'itemImage' src={item.image} alt={item.name} />
             <p>Price: {item.price}</p>
             <p>Description: {item.description}</p>
             <Stars 
@@ -18,7 +18,7 @@ function Item( { item, onDeleteItem }) {
             itemID = {item.id}/>
             <button onClick={handleDeleteClick}>Delete this menu item</button>
             <br></br>
-        </ul>
+        </div>
     )
 }
 

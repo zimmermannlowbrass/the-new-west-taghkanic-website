@@ -23,6 +23,7 @@ function Stars( { stars, itemID } ) {
 
     return (
         <h4 className="starSection" onClick={handleStarClick}>
+            <button value='0'>Reset</button>
             <button value='1' style={starCount < 1 ? null :{color: 'red'}}>{starCount < 1 ? star : likedStar}</button>
             <button value='2' style={starCount < 2 ? null :{color: 'red'}}>{starCount < 2 ? star : likedStar}</button>
             <button value='3' style={starCount < 3 ? null :{color: 'red'}}>{starCount < 3 ? star : likedStar}</button>
