@@ -4,9 +4,9 @@ import { Route, Switch } from 'react-router-dom';
 import Banner from './Components/Banner';
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
-import MealItemList from './Components/MealItemList';
-import DrinkItemList from './Components/DrinkItemList';
-import About from './Components/About';
+import MealItemList from './Components/FoodAndDrinkStuff/MealItemList';
+import DrinkItemList from './Components/FoodAndDrinkStuff/DrinkItemList';
+import About from './Components/About/About';
 
 
 function App() {

@@ -3,6 +3,8 @@ next to do:
 
 MUCH MUCH MUCH MORE CSS
 
+ADD LIST/DETAIL INTERFACE FOR ABOUT SECTION
+
 feedback form cannot submit unless there has been a name, price and description added
 add an "ARE YOU SURE?" button to appear after clicking delete
 add a "THANK YOU FOR RATING THIS FOOD!" message to appear after rating a food

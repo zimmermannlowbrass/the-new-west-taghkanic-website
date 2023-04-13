@@ -1,9 +1,16 @@
 import React from "react";
+import { Route, useRouteMatch } from "react-router-dom";
+
 
 function About() {
+
+    const match = useRouteMatch()
+    console.log(match)
+
+    
+
     return (
         <div>
-            <a id="link" href='https://www.wtdinerny.com/'>Link to the actual West Taghkanic Diner</a>
             <ul>
             The West Taghkanic Diner opened its doors in 1953 as one of four Taghkanic Diners, all built to serve travelers along the Taconic Parkway. With a large neon sign out front and retro exterior, the diner quickly became an institution and remained one as the decades passed. 
             </ul>
@@ -18,7 +25,7 @@ Upon coming back to Columbia County and acquiring WTD, Kris used the space as an
 We’re excited to be here and can’t wait to share the spirit of the diner - good vibes, great coffee, and stellar eats. 
             </ul>
             <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11837.74756962173!2d-73.7173729!3d42.1195294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd9ba86b1bda47%3A0xda77ae7251255f82!2sWest%20Taghkanic%20Diner!5e0!3m2!1sen!2sus!4v1680817898096!5m2!1sen!2sus" width={"600" }height={"400"} style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            <img className='dinerIcon'src={require ('./dinerPics/dinerIcon.jpeg')} alt="diner" width={"600" }height={"400"}  />
+            <img className='dinerIcon'src={require ('../dinerPics/dinerIcon.jpeg')} alt="diner" width={"600" }height={"400"}  />
             <br />
         </div>
     )

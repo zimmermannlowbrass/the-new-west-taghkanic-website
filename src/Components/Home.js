@@ -8,6 +8,7 @@ function Home() {
             <img className='dinerPhotos'src={require ('./dinerPics/diner2.jpg')} alt="diner" />
             <img className='dinerPhotos'src={require ('./dinerPics/diner3.jpg')} alt="diner" />
             <img className='dinerPhotos'src={require ('./dinerPics/diner4.jpg')} alt="diner" />
+            <a id="link" href='https://www.wtdinerny.com/'>Link to the actual West Taghkanic Diner</a>
         </div>
     )
 }
