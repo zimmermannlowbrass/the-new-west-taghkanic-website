@@ -34,6 +34,7 @@ function Feedback( { type, onAddItem} ) {
                 <input
                     type='text'
                     name='name'
+                    required
                     placeholder="Name..."
                     onChange={handleChange}
                 />
@@ -41,6 +42,7 @@ function Feedback( { type, onAddItem} ) {
                 <input
                     type='text'
                     name='price'
+                    required
                     placeholder="Price..."
                     onChange={handleChange}
                 />
@@ -55,6 +57,7 @@ function Feedback( { type, onAddItem} ) {
                 <input
                 type='text'
                 name='description'
+                required
                 placeholder="Description..."
                 onChange={handleChange}
                 />

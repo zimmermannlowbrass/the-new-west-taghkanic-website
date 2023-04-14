@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Stars( { stars, itemID } ) {
+function Stars( { stars, itemID, setJustRated, setJustReset } ) {
     const star = '☆'
     const likedStar = '★'
 
@@ -8,6 +8,9 @@ function Stars( { stars, itemID } ) {
 
     function handleStarClick(e) {
         setStarCount(e.target.value)
+        if (e.target.value > 0) {
+            setJustRated(true)
+        }
         fetch(`http://localhost:3000/breakfast/${itemID}`, {
             method: "PATCH",
             headers: {
@@ -21,7 +24,7 @@ function Stars( { stars, itemID } ) {
 
     return (
         <h4 className="starSection" onClick={handleStarClick}>
-            <button value='0'>Reset</button>
+            <button value='0' onClick= {() => setJustReset(true)}>Reset</button>
             <button value='1' style={starCount < 1 ? null :{color: 'red'}}>{starCount < 1 ? star : likedStar}</button>
             <button value='2' style={starCount < 2 ? null :{color: 'red'}}>{starCount < 2 ? star : likedStar}</button>
             <button value='3' style={starCount < 3 ? null :{color: 'red'}}>{starCount < 3 ? star : likedStar}</button>

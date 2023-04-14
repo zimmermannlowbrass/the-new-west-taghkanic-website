@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Stars from "./StarBar";
 
 function Item( { item, onDeleteItem }) {
 
+    const [areYouSure, setSure] = useState(false)
+    const [justRated, setJustRated] = useState(false)
+    const [justReset, setJustReset] = useState(false)
+
     function handleDeleteClick() {
-        onDeleteItem(item)
+        areYouSure ? onDeleteItem(item) : setSure(true)
     }
+
 
     return (
         <div>
@@ -14,9 +19,13 @@ function Item( { item, onDeleteItem }) {
             <p>Price: {item.price}</p>
             <p>Description: {item.description}</p>
             <Stars 
+            setJustRated={setJustRated}
+            setJustReset={setJustReset}
             stars={item.stars}
             itemID = {item.id}/>
+            <p style={{color: 'firebrick'}}>{(justRated && !justReset) ? 'Thanks for rating!' : null}</p>
             <button onClick={handleDeleteClick}>Delete this menu item</button>
+            <p style={{color: 'firebrick'}}>{areYouSure ? 'Are you sure?': null}</p>
             <br></br>
         </div>
     )
