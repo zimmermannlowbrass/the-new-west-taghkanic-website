@@ -6,7 +6,7 @@ function DrinkItemList( { items, onAddItem, onDeleteItem } ) {
 
     function createCard(item) {
         return (
-            <div key = {item.id} className='drinkCard'>
+            <div key = {item.id} className='cardContainer'>
                 <Item 
                 item = {item}
                 onDeleteItem = {onDeleteItem}

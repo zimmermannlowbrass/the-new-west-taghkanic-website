@@ -6,7 +6,7 @@ function MealItemList( { items, onAddItem, onDeleteItem } ) {
 
     function createCard(item) {
         return (
-            <div key = {item.id} className = 'mealCard'>
+            <div key = {item.id} className = 'cardContainer'>
                 <Item 
                 item = {item}
                 onDeleteItem = {onDeleteItem}

@@ -38,22 +38,17 @@ h2 {
   justify-content: center;
 }
 
-.mealCard {
-  width: 800px;
-  margin-left: 100px;
-  border-style: solid;
-  border-width: thick;
-}
-
-.drinkCard {
+.cardContainer {
+  display: inline-block;
   width: 600px;
-  margin-left: 100px;
+  margin-left: auto;
   border-style: solid;
   border-width: thick;
 }
 
 .itemImage {
-  margin-left: 40px;
+  width: 500px;
+  height: fit-content;
 }
 
 h1 {
