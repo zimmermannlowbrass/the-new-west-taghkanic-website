@@ -5,9 +5,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+}
+
+#diner {
+  border: double black 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;    
+  height: 75%;
+}
+
+header {
+  font-family:cursive;
+  font-size: 45pt;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.mealCard {
+  width: 800px;
+  margin-left: 100px;
+  border-style: solid;
+  border-width: thick;
+}
+
+.drinkCard {
+  width: 600px;
+  margin-left: 100px;
+  border-style: solid;
+  border-width: thick;
+}
+
+.itemImage {
+  margin-left: 40px;
+}
+
+h1 {
+  font-family: 'Lucida Sans Grande';
+  font-size: 35pt;
+}
+
+#link {
+  font-family: cursive;
+  font-size: 20pt;
+}
+
+.dinerPhotos {
+  width: 350pt;
+  height: 200pt;
+  display: inline-block;
+}
+

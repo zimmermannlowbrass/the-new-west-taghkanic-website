@@ -44,12 +44,11 @@ function App() {
     })
   }
 
-
   const mealItems = items.filter(item => item.type === 'meal')
   const drinkItems = items.filter(item => item.type === 'drink')
  
   return (
-    <div>
+    <div className='App'>
       <Banner />
       <NavBar />
       <Switch>

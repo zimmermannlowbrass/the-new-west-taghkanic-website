@@ -11,7 +11,6 @@ function Item( { item, onDeleteItem }) {
         areYouSure ? onDeleteItem(item) : setSure(true)
     }
 
-
     return (
         <div>
             <h3>{item.name}</h3>

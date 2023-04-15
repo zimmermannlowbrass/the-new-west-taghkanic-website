@@ -7,7 +7,7 @@
       "price": "14.99",
       "description": "eggs, bacon, sausage, ham, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/LumberjackSlam_qj1GbPm.max-784x410.jpg",
-      "stars": "0"
+      "stars": "5"
     },
     {
       "id": "2",
@@ -61,7 +61,7 @@
       "price": "1.99",
       "description": "espresso",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_espresso.jpg",
-      "stars": "0"
+      "stars": "5"
     },
     {
       "id": "10",
