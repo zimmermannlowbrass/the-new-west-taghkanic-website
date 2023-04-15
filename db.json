@@ -7,7 +7,7 @@
       "price": "14.99",
       "description": "eggs, bacon, sausage, ham, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/LumberjackSlam_qj1GbPm.max-784x410.jpg",
-      "stars": "5"
+      "stars": "0"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "price": "18.99",
       "description": "eggs, ham, cheese, english muffin, hashbrowns",
       "image": "https://cdn.cheapism.com/images/Classic_Benny_Breakfast.max-784x410.jpg",
-      "stars": "3"
+      "stars": "0"
     },
     {
       "id": "3",

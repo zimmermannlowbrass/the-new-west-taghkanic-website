@@ -46,12 +46,15 @@ function App() {
     })
   }
 
-  function handleCheckOutCartChange(quantity, item) {
-    const newCartItem = {quantity: quantity, name: item.name, image: item.image}
+  function handleCheckOutCartChange(quantity, item, total) {
+    const newCartItem = {
+      quantity: quantity, 
+      name: item.name, 
+      image: item.image,
+      price: total
+    }
     setCheckOutCart([...checkOutCart, newCartItem])
   }
-
-  console.log(checkOutCart)
 
 
 
@@ -83,7 +86,8 @@ function App() {
           />
         </Route>
         <Route path='/checkout'>
-          <CheckOut />
+          <CheckOut 
+          checkOutCart={checkOutCart}/>
         </Route>
         <Route path='/about'>
           <About />

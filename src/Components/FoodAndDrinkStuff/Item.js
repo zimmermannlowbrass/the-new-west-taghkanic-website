@@ -17,8 +17,14 @@ function Item( { item, onDeleteItem, onChangeCheckOutCart }) {
             setInCart((inCart)=> ++inCart)
         } else if (e.target.value === '-' && inCart > 0) {
             setInCart((inCart)=> --inCart)
+        }    
+    }
+
+    function handleAddToCart(){
+        if (inCart > 0){
+            const total = inCart * item.price
+            onChangeCheckOutCart(inCart, item, total)
         }
-        
     }
 
     return (
@@ -28,7 +34,7 @@ function Item( { item, onDeleteItem, onChangeCheckOutCart }) {
             <p>Price: {item.price}</p>
             <div>
                 <button value='+' onClick={(e) => handleClick(e)}>+</button><button value='-' onClick={(e) => handleClick(e)}>-</button>{' '}
-                <button onClick={() => onChangeCheckOutCart(inCart, item)} >Add to cart : {inCart}</button>
+                <button onClick={() => handleAddToCart()} >Add to cart : {inCart}</button>
             </div>
             <p>Description: {item.description}</p>
             <Stars 
