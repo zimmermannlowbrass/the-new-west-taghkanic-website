@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Banner from './Components/Banner';
-import NavBar from './Components/NavBar';
-import Home from './Components/Home';
+import Banner from './Components/Banner/Banner';
+import NavBar from './Components/NavBar/NavBar';
+import Home from './Components/Home/Home';
 import MealItemList from './Components/FoodAndDrinkStuff/MealItemList';
 import DrinkItemList from './Components/FoodAndDrinkStuff/DrinkItemList';
+import CheckOut from './Components/Checkout/CheckOut';
 import About from './Components/About/About';
 
 
 function App() {
 
   const [items, setItems] = useState([])
+  const [checkOutCart, setCheckOutCart] = useState([])
 
   useEffect( () => {fetch(`http://localhost:3000/breakfast`)
   .then(r => r.json())
@@ -44,6 +46,15 @@ function App() {
     })
   }
 
+  function handleCheckOutCartChange(quantity, item) {
+    const newCartItem = {quantity: quantity, name: item.name, image: item.image}
+    setCheckOutCart([...checkOutCart, newCartItem])
+  }
+
+  console.log(checkOutCart)
+
+
+
   const mealItems = items.filter(item => item.type === 'meal')
   const drinkItems = items.filter(item => item.type === 'drink')
  
@@ -60,6 +71,7 @@ function App() {
           items = {mealItems}
           onAddItem = {handleAddItem}
           onDeleteItem = {handleDeleteItem}
+          onChangeCheckOutCart = {handleCheckOutCartChange}
            />
         </Route>
         <Route path='/drinks'>
@@ -67,7 +79,11 @@ function App() {
           items = {drinkItems} 
           onAddItem = {handleAddItem}
           onDeleteItem = {handleDeleteItem}
+          onChangeCheckOutCart = {handleCheckOutCartChange}
           />
+        </Route>
+        <Route path='/checkout'>
+          <CheckOut />
         </Route>
         <Route path='/about'>
           <About />

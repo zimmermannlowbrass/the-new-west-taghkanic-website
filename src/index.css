@@ -17,6 +17,13 @@ code {
   text-align: center;
 }
 
+header {
+  font-family: cursive;
+  font-size: 45pt;
+  display: flex;
+  justify-content: center;
+}
+
 #bannerDinerImage {
   box-shadow: 10px 5px 5px 1px black;
   width: 80%;
@@ -26,16 +33,11 @@ code {
   height: 75%;
 }
 
-header {
-  font-family:cursive;
-  font-size: 45pt;
-  display: flex;
-  justify-content: center;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
+.subSectionTitle {
+  font-size: 45px;
+  border: 5px ridge rgb(110, 93, 66);
+  border-radius: 3px;
+  display: inline-block;  
 }
 
 .cardContainer {
@@ -56,10 +58,6 @@ h2 {
   height: fit-content;
 }
 
-h1 {
-  font-family: 'Lucida Sans Grande';
-  font-size: 35pt;
-}
 
 #link {
   font-family: cursive;
@@ -70,6 +68,18 @@ h1 {
   width: 350pt;
   height: 200pt;
   display: inline-block;
+}
+
+.aboutInfo {
+  width: 800px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
 }
 
 .aboutImage {

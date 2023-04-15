@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function About() {
+
+    const [displayInfo, setDisplayInfo] = useState('')
 
     const aboutInformation = [
         { date: 1953, info: 'The West Taghkanic Diner opened its doors in 1953 as one of four Taghkanic Diners, all built to serve travelers along the Taconic Parkway. With a large neon sign out front and retro exterior, the diner quickly became an institution and remained one as the decades passed. '},
@@ -12,18 +14,32 @@ function About() {
 
     const aboutRenderList = aboutInformation.map(about => {
         return (
-            <ul key={about.date}>
-                <h3>{about.date}</h3>
-                <li>{about.info}</li>
-            </ul>
+            <div key={about.date}>
+                <h2 
+                style={{display: 'inline-block', fontStyle: 'italic' }}
+                name={about.date}
+                onClick = {() => handleClick(about)}
+                >
+                    {about.date}
+                </h2>
+                <br />
+                {displayInfo === about.date ? 
+                <li className="aboutInfo">{about.info}</li> 
+                : null}
+            </div>
         )
     })
 
+    function handleClick(about) {
+        setDisplayInfo(about.date)
+    }
+
+
     return (
         <div>
-            <div>
-                {aboutRenderList}
-            </div>
+            <h1 className="subSectionTitle">About Section</h1>
+            <br />
+            {aboutRenderList}
             <br />
             <iframe className="aboutImage" title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11837.74756962173!2d-73.7173729!3d42.1195294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd9ba86b1bda47%3A0xda77ae7251255f82!2sWest%20Taghkanic%20Diner!5e0!3m2!1sen!2sus!4v1680817898096!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             <img className='aboutImage'src={require ('../dinerPics/dinerIcon.jpeg')} alt="diner"/>

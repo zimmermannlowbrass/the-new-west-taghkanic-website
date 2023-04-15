@@ -2,7 +2,7 @@ import React from "react";
 import Item from "./Item";
 import Feedback from "./Feedback";
 
-function DrinkItemList( { items, onAddItem, onDeleteItem } ) {
+function DrinkItemList( { items, onAddItem, onDeleteItem, onChangeCheckOutCart } ) {
 
     function createCard(item) {
         return (
@@ -10,6 +10,7 @@ function DrinkItemList( { items, onAddItem, onDeleteItem } ) {
                 <Item 
                 item = {item}
                 onDeleteItem = {onDeleteItem}
+                onChangeCheckOutCart = {onChangeCheckOutCart}
                 />
                 <br />
             </div>
@@ -20,7 +21,8 @@ function DrinkItemList( { items, onAddItem, onDeleteItem } ) {
 
     return (
         <div>
-            <h1>Drinks</h1>
+            <h1 className="subSectionTitle">Drink Section</h1>
+            <br />
             {drinkItemCards}
             <Feedback 
             type='drink'
