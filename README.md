@@ -1,6 +1,8 @@
 
 next to do: 
 
+YO
+
 tad more css
 finish readme
 #  The New West Taghkanic Website
