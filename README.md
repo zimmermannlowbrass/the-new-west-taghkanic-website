@@ -3,9 +3,6 @@ next to do:
 
 tad more css
 finish readme
-
-![gif](diner_demo/mp4)
-
 #  The New West Taghkanic Website
 
     # Mission
