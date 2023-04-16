@@ -1,8 +1,8 @@
 
 next to do: 
- dsvds
+ dsvdscdsc
 YO
-
+sw
 tad more css
 finish readme
 #  The New West Taghkanic Website
