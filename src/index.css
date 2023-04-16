@@ -20,12 +20,25 @@ code {
 header {
   font-family: cursive;
   font-size: 45pt;
-  display: flex;
-  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(38, 23, 6, 0.769);
+  color: rgba(245, 245, 245, 0.664);
+  box-shadow: 10px 10px 5px black;
+}
+
+.textBox {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(38, 23, 6, 0.769);
+  color: rgba(245, 245, 245, 0.664);
+  box-shadow: 10px 10px 5px black;
 }
 
 #bannerDinerImage {
-  box-shadow: 10px 5px 5px 1px black;
+  box-shadow: 10px 10px 5px black;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -34,10 +47,13 @@ header {
 }
 
 .subSectionTitle {
-  font-size: 45px;
-  border: 5px ridge rgb(110, 93, 66);
-  border-radius: 3px;
-  display: inline-block;  
+  font-size: 60px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(38, 23, 6, 0.769);
+  color: rgba(245, 245, 245, 0.664);
+  box-shadow: 10px 10px 5px black;
 }
 
 .cardContainer {
@@ -56,6 +72,17 @@ header {
 .itemImage {
   width: 500px;
   height: fit-content;
+}
+
+
+.starbarBox {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  background-color: rgba(38, 23, 6, 0.769);
+  color: rgba(245, 245, 245, 0.664);
+  box-shadow: 10px 10px 5px black;
 }
 
 .checkOutContainer {
@@ -88,6 +115,9 @@ header {
   width: 350pt;
   height: 200pt;
   display: inline-block;
+  border-radius: 4px;
+  margin: 10px;
+  box-shadow: 10px 5px 5px black;
 }
 
 .aboutInfo {
@@ -95,17 +125,23 @@ header {
   display: inline-block;
   border-radius: 4px;
   margin: 10px;
-  box-shadow:
-    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
-    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
-    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+  box-shadow: 10px 5px 5px black;
+  font-weight: 700;
+  font-size: 12pt;
+  background-color: rgb(189, 155, 115);
 }
 
 .aboutImage {
   margin: 10px;
   height: 350px;
   width: 500px;
-  box-shadow: 2px 2px black;
+  box-shadow: 10px 5px 5px black;
 }
 
+
+button {
+  background-color:  rgb(189, 155, 115);
+  color: azure;
+  border-radius: 12px;
+  font-weight: 700;
+}

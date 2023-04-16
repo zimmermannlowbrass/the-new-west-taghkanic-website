@@ -24,8 +24,8 @@ function Stars( { stars, itemID, setJustRated, setJustReset } ) {
     }
 
     return (
-        <div>
-            <h4>What did you think of this item?</h4>
+        <div className="starbarBox">
+            <h4>Leave us a rating!</h4>
             <h4 className="starSection" onClick={handleStarClick}>
                 <button value='0' onClick= {() => setJustReset(true)}>Reset</button>
                 <button value='1' style={starCount < 1 ? null :{color: 'red'}}>{starCount < 1 ? star : likedStar}</button>

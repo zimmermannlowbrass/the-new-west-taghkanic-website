@@ -16,7 +16,8 @@ function About() {
         return (
             <div key={about.date}>
                 <h2 
-                style={{display: 'inline-block', fontStyle: 'italic' }}
+                className="textBox"
+                style={{fontStyle: 'italic' }}
                 name={about.date}
                 onClick = {() => handleClick(about)}
                 >
@@ -37,7 +38,8 @@ function About() {
 
     return (
         <div>
-            <h1 className="subSectionTitle">About Section</h1>
+            <h1 className="subSectionTitle" style={{marginBottom: '0px'}}>About Section</h1>
+            <p className="textBox" style={{fontStyle: 'italic' }}>Click below to find out more!</p>
             <br />
             {aboutRenderList}
             <br />

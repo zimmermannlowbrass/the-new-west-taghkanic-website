@@ -6,7 +6,7 @@ function Banner() {
             <header>
                 <b>Welcome to the West Taghkanic Diner!</b>
             </header>
-            <h2>A retro diner featuring locally sourced ingredients, house smoked meats, and fresh baked pastries.</h2>
+            <h2 className="textBox">A retro diner featuring locally sourced ingredients, house smoked meats, and fresh baked pastries.</h2>
             <img id='bannerDinerImage' src={require ('../dinerPics/dinerCoverPhoto.jpeg')} alt='diner' />
         </div>
     )

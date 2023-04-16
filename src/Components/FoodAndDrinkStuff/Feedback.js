@@ -26,7 +26,7 @@ function Feedback( { type, onAddItem} ) {
     }
 
     return (
-        <div className="container">
+        <div className="textBox" style={{width: '700px', height: '160px'}}>
             <form className="submitNewFood" onSubmit={handleSubmit}>
                 {type === 'meal' ? 
                 <h2>Do you have a meal that you would want to recommend?</h2> :

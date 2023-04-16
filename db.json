@@ -16,7 +16,7 @@
       "price": "18.99",
       "description": "eggs, ham, cheese, english muffin, hashbrowns",
       "image": "https://cdn.cheapism.com/images/Classic_Benny_Breakfast.max-784x410.jpg",
-      "stars": "0"
+      "stars": "2"
     },
     {
       "id": "3",
@@ -50,7 +50,7 @@
       "name": "Chocolate Banana Pancakes",
       "type": "meal",
       "price": "10.99",
-      "description": "eggs, sausage, hasbrowns, chocolate banana pancakses",
+      "description": "eggs, sausage, hasbrowns, chocolate banana pancakes",
       "image": "https://cdn.cheapism.com/images/Choconana_Pancake_Breakfast_Feb22_Core.CC_Ma.max-784x410.jpg",
       "stars": 0
     },
@@ -61,7 +61,7 @@
       "price": "1.99",
       "description": "espresso",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_espresso.jpg",
-      "stars": "5"
+      "stars": "0"
     },
     {
       "id": "10",
@@ -70,7 +70,7 @@
       "price": "2.99",
       "description": "espresso, coffee",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_red-eye.jpg",
-      "stars": 0
+      "stars": "4"
     },
     {
       "id": "11",

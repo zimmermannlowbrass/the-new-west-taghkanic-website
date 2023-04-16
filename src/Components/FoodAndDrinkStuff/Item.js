@@ -32,20 +32,22 @@ function Item( { item, onDeleteItem, onChangeCheckOutCart }) {
 
     return (
         <div>
-            <h3>{item.name}</h3>
+            <h2>{item.name}</h2>
             <img className = 'itemImage' src={item.image} alt={item.name} />
-            <p>Price: {item.price}</p>
+            <h3>Price: {item.price}</h3>
+            <i>Includes {item.description}</i>
             <div>
+                <br />
                 <button value='+' onClick={(e) => handleClick(e)}>+</button><button value='-' onClick={(e) => handleClick(e)}>-</button>{' '}
                 <button onClick={() => handleAddToCart()} >Add to cart: {inCart}</button>
                 {justAddedtoCart ? <p style={{color: 'firebrick'}}>Added {inCart} to your cart!</p> : null}
             </div>
-            <p>Description: {item.description}</p>
             <Stars 
             setJustRated={setJustRated}
             setJustReset={setJustReset}
             stars={item.stars}
-            itemID = {item.id}/>
+            itemID = {item.id}
+            />
             <p style={{color: 'firebrick'}}>{(justRated && !justReset) ? 'Thanks for rating!' : null}</p>
             <button onClick={handleDeleteClick}>{areYouSure ? "Yes, please delete this item." : "Delete this menu item"}</button>
             <p style={{color: 'firebrick'}}>{areYouSure ? 'Are you sure you want to delete this item?': null}</p>
