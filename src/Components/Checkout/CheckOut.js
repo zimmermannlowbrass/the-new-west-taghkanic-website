@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function CheckOut({ checkOutCart }) {
+function CheckOut({ checkOutCart, onRemoveFromCart }) {
 
     const items = checkOutCart.map(item => {
         return (
@@ -12,6 +12,7 @@ function CheckOut({ checkOutCart }) {
                     Quantity: {item.quantity}
                     <br />
                     Subtotal : $ {item.price}
+                    <button onClick={() => onRemoveFromCart(item)}>Remove from cart</button>
                 </h3>
                 <img className='checkOutImage' src={item.image} alt={item.name} />
                 <br />

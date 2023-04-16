@@ -51,9 +51,17 @@ function App() {
       quantity: quantity, 
       name: item.name, 
       image: item.image,
-      price: total
+      price: total,
+      id : (Date.now())
+
     }
     setCheckOutCart([...checkOutCart, newCartItem])
+  }
+
+  function handleRemoveFromCheckOut(removeItem) {
+    console.log(removeItem.id)
+    const updatedCheckOutCart = checkOutCart.filter(item => item.id !== removeItem.id)
+    setCheckOutCart(updatedCheckOutCart)
   }
 
 
@@ -87,7 +95,9 @@ function App() {
         </Route>
         <Route path='/checkout'>
           <CheckOut 
-          checkOutCart={checkOutCart}/>
+          checkOutCart={checkOutCart}
+          onRemoveFromCart={handleRemoveFromCheckOut}
+          />
         </Route>
         <Route path='/about'>
           <About />

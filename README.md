@@ -1,15 +1,8 @@
 
 next to do: 
 
-MUCH MUCH MUCH MORE CSS
-
-
-
-
-make it so that the main website is accessable from clicking the photo at top
-- add more description about the website in the home page tab
-
-Try and create a cart section that you can add to while you shop? Does not persist 
+tad more css
+finish readme
 
 
 
