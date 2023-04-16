@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function CheckOut({ checkOutCart, onRemoveFromCart }) {
 
     const items = checkOutCart.map(item => {
@@ -21,17 +20,14 @@ function CheckOut({ checkOutCart, onRemoveFromCart }) {
     })
     
     const subTotals = checkOutCart.map(item => item.price)
-
     const total = subTotals.reduce((a,b) => a + b, 0)
     
-    console.log(items)
-
     return (
         <div>
             <h1 className="subSectionTitle">Check-Out</h1>
             <h2 className='textBox'>Total: ${Math.round(total * 100) / 100} </h2>
             <br />
-            {items.length > 0 ? items : <img src={require ("./empty_cart.png")} alt='nothing in your cart'/>}
+            {items.length > 0 ? items : <img className='dinerPhotos' src={require ("./empty_cart.png")} alt='nothing in your cart'/>}
         </div>
     )
 }

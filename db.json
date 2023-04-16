@@ -7,7 +7,7 @@
       "price": "14.99",
       "description": "eggs, bacon, sausage, ham, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/LumberjackSlam_qj1GbPm.max-784x410.jpg",
-      "stars": "0"
+      "stars": "2"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "price": "18.99",
       "description": "eggs, ham, cheese, english muffin, hashbrowns",
       "image": "https://cdn.cheapism.com/images/Classic_Benny_Breakfast.max-784x410.jpg",
-      "stars": "2"
+      "stars": "0"
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "price": "10.99",
       "description": "eggs, steak, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/T-Bone_Steak__Eggs.max-784x410.jpg",
-      "stars": "4"
+      "stars": "0"
     },
     {
       "id": "4",
@@ -52,7 +52,7 @@
       "price": "10.99",
       "description": "eggs, sausage, hasbrowns, chocolate banana pancakes",
       "image": "https://cdn.cheapism.com/images/Choconana_Pancake_Breakfast_Feb22_Core.CC_Ma.max-784x410.jpg",
-      "stars": 0
+      "stars": "2"
     },
     {
       "id": "7",
@@ -70,7 +70,7 @@
       "price": "2.99",
       "description": "espresso, coffee",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_red-eye.jpg",
-      "stars": "4"
+      "stars": "0"
     },
     {
       "id": "11",
@@ -88,7 +88,7 @@
       "price": "3.99",
       "description": "espresso, milk",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_macchiato.jpg",
-      "stars": 0
+      "stars": "1"
     },
     {
       "id": "13",

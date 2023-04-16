@@ -11,6 +11,7 @@ function NavBar() {
         background: "black",
         textDecoration: "none",
         color: "white",
+        fontWeight: 'bold'
       };
 
 
