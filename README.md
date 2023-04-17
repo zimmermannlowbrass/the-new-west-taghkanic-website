@@ -1,11 +1,4 @@
 
-next to do: 
- dsvdscdsc
-YO
-sw
-tad more css
-finish readme
-
 ![demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjI0NDlhZTM0MGM4OGEzMzIwNjFkMWE3YmY3YjM5ODljOGFiNWM4OCZjdD1n/Ucq1Z1T0wUrPAmPBZY/giphy.gif)
 #  The New West Taghkanic Website
 
