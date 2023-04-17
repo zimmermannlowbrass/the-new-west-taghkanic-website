@@ -22,6 +22,7 @@ function Stars( { stars, itemID, setJustRated, setJustReset } ) {
             })
         })
     }
+    console.log(starCount)
 
     return (
         <div className="starbarBox">
@@ -33,6 +34,7 @@ function Stars( { stars, itemID, setJustRated, setJustReset } ) {
                 <button value='3' style={starCount < 3 ? null :{color: 'red'}}>{starCount < 3 ? star : likedStar}</button>
                 <button value='4' style={starCount < 4 ? null :{color: 'red'}}>{starCount < 4 ? star : likedStar}</button>
                 <button value='5' style={starCount < 5 ? null :{color: 'red'}}>{starCount < 5 ? star : likedStar}</button>
+                <p>{starCount === '1' ? 'Sorry you did not like this item!' : null}</p>
             </h4>
         </div>
     )
