@@ -1,10 +1,28 @@
 
 ![demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjI0NDlhZTM0MGM4OGEzMzIwNjFkMWE3YmY3YjM5ODljOGFiNWM4OCZjdD1n/Ucq1Z1T0wUrPAmPBZY/giphy.gif)
 #  The New West Taghkanic Website
-*For this project, I have created a website dedicated to the greatest diner in the Hudson Valley area. 
+*For this project, I have created a website dedicated to the greatest diner in the Hudson Valley area. *
 - The user will be able to access information, photos, and menu items from the diner. 
-- The user will be able to add items to their own CheckOut cart, leave a rating on an item, delete any items they did not like, and also add items that they want to see on the menu. My website will have plenty of controlled components through to create this dynamic user experience. 
-Hope you enjoy!*
+- The user will be able to add items to their own CheckOut cart, leave a rating on an item, delete any items they did not like, and also add items that they want to see on the menu. 
+- My website will have plenty of controlled components through to create this dynamic user experience. 
+- Hope you enjoy!
+
+├── src
+    ├── Components 
+        ├── NavBar.js
+        ├── Home.js
+        ├── MealItemList.js
+        |   ├── Item.js
+        |   |   ├── StarBar.js
+        |   ├── Feedback.js
+        ├── DrinksItemList.js
+        |   ├── Item.js
+        |   |   ├── StarBar.js
+        |   ├── Feedback.js
+        ├── CheckOut
+        ├── About
+    ├── App.js
+    ├── Index.js
 
 
     -Section 1: Home-
