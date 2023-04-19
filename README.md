@@ -7,6 +7,7 @@
 - My website will have plenty of controlled components through to create this dynamic user experience. 
 - Hope you enjoy!
 
+```txt
 ├── src
     ├── Components 
         ├── NavBar.js
@@ -23,7 +24,7 @@
         ├── About
     ├── App.js
     ├── Index.js
-
+    ```
 
     -Section 1: Home-
 
