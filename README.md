@@ -24,7 +24,7 @@
         ├── About
     ├── App.js
     ├── Index.js
-    ```
+```
 
     -Section 1: Home-
 
