@@ -35,6 +35,7 @@ function Feedback( { type, onAddItem} ) {
                     type='text'
                     name='name'
                     required
+                    value = {formData.name}
                     placeholder="Name..."
                     onChange={handleChange}
                 />
@@ -43,6 +44,7 @@ function Feedback( { type, onAddItem} ) {
                     type='text'
                     name='price'
                     required
+                    value = {formData.price}
                     placeholder="Price..."
                     onChange={handleChange}
                 />
@@ -50,16 +52,18 @@ function Feedback( { type, onAddItem} ) {
                 <input
                     type='text'
                     name='image'
+                    value = {formData.image}
                     placeholder="Image URL..."
                     onChange={handleChange}
                 />
                 <br />
                 <input
-                type='text'
-                name='description'
-                required
-                placeholder="Description..."
-                onChange={handleChange}
+                    type='text'
+                    name='description'
+                    required
+                    value = {formData.description}
+                    placeholder="Description..."
+                    onChange={handleChange}
                 />
                 <br />
                 <button>Submit</button>    

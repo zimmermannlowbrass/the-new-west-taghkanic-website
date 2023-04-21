@@ -20,8 +20,8 @@
         |   ├── Item.js
         |   |   ├── StarBar.js
         |   ├── Feedback.js
-        ├── CheckOut
-        ├── About
+        ├── CheckOut.js
+        ├── About.js
     ├── App.js
     ├── Index.js
 ```

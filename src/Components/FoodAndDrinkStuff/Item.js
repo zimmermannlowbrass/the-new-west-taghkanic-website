@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Stars from "./StarBar";
 
-function Item( { item, onDeleteItem, onChangeCheckOutCart }) {
+function Item({ item, onDeleteItem, onChangeCheckOutCart }) {
 
     const [areYouSure, setSure] = useState(false)
     const [justRated, setJustRated] = useState(false)

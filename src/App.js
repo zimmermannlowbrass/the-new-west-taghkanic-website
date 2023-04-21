@@ -59,7 +59,6 @@ function App() {
   }
 
   function handleRemoveFromCheckOut(removeItem) {
-    console.log(removeItem.id)
     const updatedCheckOutCart = checkOutCart.filter(item => item.id !== removeItem.id)
     setCheckOutCart(updatedCheckOutCart)
   }
