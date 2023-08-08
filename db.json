@@ -16,7 +16,7 @@
       "price": "18.99",
       "description": "eggs, ham, cheese, english muffin, hashbrowns",
       "image": "https://cdn.cheapism.com/images/Classic_Benny_Breakfast.max-784x410.jpg",
-      "stars": "5"
+      "stars": "0"
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "price": "10.99",
       "description": "eggs, steak, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/T-Bone_Steak__Eggs.max-784x410.jpg",
-      "stars": "2"
+      "stars": "3"
     },
     {
       "id": "4",
@@ -34,7 +34,7 @@
       "price": "10.99",
       "description": "eggs, ham, cheese, hasbrowns, toast",
       "image": "https://cdn.cheapism.com/images/DODe_16550_Oct22_FINAL_51255_Moons_over_My_H.max-784x410.jpg",
-      "stars": "1"
+      "stars": "0"
     },
     {
       "id": "5",
@@ -52,7 +52,7 @@
       "price": "10.99",
       "description": "eggs, sausage, hasbrowns, chocolate banana pancakes",
       "image": "https://cdn.cheapism.com/images/Choconana_Pancake_Breakfast_Feb22_Core.CC_Ma.max-784x410.jpg",
-      "stars": "0"
+      "stars": "1"
     },
     {
       "id": "7",
@@ -61,7 +61,7 @@
       "price": "1.99",
       "description": "espresso",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_espresso.jpg",
-      "stars": "0"
+      "stars": "2"
     },
     {
       "id": "10",
@@ -70,7 +70,7 @@
       "price": "2.99",
       "description": "espresso, coffee",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_red-eye.jpg",
-      "stars": "0"
+      "stars": "5"
     },
     {
       "id": "11",
@@ -79,7 +79,7 @@
       "price": "3.99",
       "description": "espresso, water",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_americano.jpg",
-      "stars": "0"
+      "stars": "2"
     },
     {
       "id": "12",
@@ -107,15 +107,6 @@
       "description": "espresso, milk",
       "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg",
       "stars": 0
-    },
-    {
-      "name": "Avacado Toast",
-      "type": "meal",
-      "price": "10",
-      "description": "yummy",
-      "image": "https://media.istockphoto.com/id/1131421212/photo/healthy-avocado-sandwich-toast-bread-mushed-avocado-paste-on-wooden-background-guacamole.jpg?s=612x612&w=0&k=20&c=Tb224POkHQ5pcuhBnllm-ZsYgCKbW046zpncV4S2TC4=",
-      "stars": "1",
-      "id": "Azy3DOB"
     }
   ]
 }

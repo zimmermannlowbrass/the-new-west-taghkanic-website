@@ -1,8 +1,10 @@
 import React from "react";
+import Test from "../challenge";
 
 function Home() {
     return(
         <div>
+            {/* <Test /> */}
             <h1 className="subSectionTitle">Home Section</h1>
             <h2 className="textBox">
                 The West Taghkanic Diner (WTD) stands as originally constructed, with the same mission as nearly 65 years ago...
