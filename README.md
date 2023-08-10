@@ -60,4 +60,4 @@ This section is dedicated to the authenticity of the West Taghkonic Diner. Here,
 
 Inspiration is included below...
 [The Origin West Taghkonic Diner Website](https://www.wtdinerny.com/)
-![cover]("./src/Diner-Website.png")
+![cover](./src/Diner-Website.png)
